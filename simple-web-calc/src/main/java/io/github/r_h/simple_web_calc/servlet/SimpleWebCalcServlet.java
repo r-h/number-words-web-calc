@@ -5,7 +5,6 @@ import io.github.r_h.simple_web_calc.logic.expression.ExpressionsParser;
 import java.io.IOException;
 
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -15,7 +14,6 @@ import org.apache.log4j.Logger;
 /**
  * Servlet implementation class SimpleWebCalcServlet
  */
-@WebServlet(urlPatterns = { "/" })
 public class SimpleWebCalcServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
@@ -90,12 +88,9 @@ public class SimpleWebCalcServlet extends HttpServlet {
 	 * Replaces the token in the text with replacement, if the replacement is
 	 * different from null. Otherwise just removes the token from text
 	 * 
-	 * @param text
-	 *            a text
-	 * @param token
-	 *            a token
-	 * @param replacement
-	 *            a replacement
+	 * @param text a text
+	 * @param token a token
+	 * @param replacement a replacement
 	 * @return the result
 	 */
 	private String replaceTokenWithString(String text, String token,
