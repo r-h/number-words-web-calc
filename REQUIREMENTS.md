@@ -37,4 +37,4 @@ be supported in German words and numbers.
 # 3. Release
 - all needed web-sites or compiled program
 - commented source code
-- a short description 
+- a short description of how the program works
