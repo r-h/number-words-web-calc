@@ -4,10 +4,10 @@ A simple calculator as an webapp written in Java
 
 # About
 
-This is a simple web-based calculator which can parse and evaluate simple
+This is a simple web-based calculator which can evaluate simple
 expressions like `4 * 5`, `675 -3` and also expressions given as german words
 e.g. `dreihundertzweiundneunzig mal sieben` and even 'mixed' expressions
-like `dreihundertzweiundneunzig mal 7`.
+like `zweiundneunzig mal 7`.
 
 I wrote this some years ago as a respond to a test for an job application.
 The orginal requirements can be found [here](REQUIREMENTS.md).
@@ -44,3 +44,6 @@ to 'http://localhost:8080/'
 
 Alternatively you can run the project from your favorite IDE
 like [Eclipse](http://www.eclipse.org/) with e.g. [Run-Jetty-Run](https://code.google.com/p/run-jetty-run/)
+
+# How it works
+
