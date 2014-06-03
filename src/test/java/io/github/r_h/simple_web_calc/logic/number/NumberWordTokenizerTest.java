@@ -17,10 +17,7 @@ import org.junit.Test;
  */
 public class NumberWordTokenizerTest {
 	
-	
-	/**
-	 * Test method for {@link com.gateprotect.simplecalc.logic.numbers.NumberWordTokenizer#tokenize()}.
-	 */
+
 	@Test
 	public void testSimpleAtomicTokenize() throws Exception{
 		String numberWord = "FünF";
@@ -28,9 +25,6 @@ public class NumberWordTokenizerTest {
 		assertEqualsList(expectedList, getTokenized(numberWord));
 	}
 	
-	/**
-	 * Test method for {@link com.gateprotect.simplecalc.logic.numbers.NumberWordTokenizer#tokenize()}.
-	 */
 	@Test
 	public void testComplexMillionTokenize() throws Exception{
 		String numberWord = "minuseinemillionvierhunderttausendachthundertzweiundfünfzig";
@@ -40,9 +34,7 @@ public class NumberWordTokenizerTest {
 		assertEqualsList(expected, getTokenized(numberWord));
 	}
 	
-	/**
-	 * Test method for {@link com.gateprotect.simplecalc.logic.numbers.NumberWordTokenizer#tokenize()}.
-	 */
+	
 	@Test(expected=NumberWordException.class)
 	public void testInvalidTokenTokenize() throws Exception{
 		String numberWord = "zweihundertdrölfzig";
