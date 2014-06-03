@@ -59,7 +59,7 @@ This one splits the expressions on line-breaks and feeds the parts to the `Expre
 The `ExpressionParser` splits the single expression into its parts, which are recognized by its separating space characters. After removing empty parts,
 the `ExpressionParser` tries to identify the 3 valid parts of an expression, which are: two numbers and an operator.
 
-For recognizing the numbers, the `NumberParser` is used. If no numeric number is detected, the NumberParser delegates the parsing of German number-words to the `NumberWordParser`.
+For recognizing the numbers, the `NumberParser` is used. If no numeric number is detected, the `NumberParser` delegates the parsing of German number-words to the `NumberWordParser`.
 This one splits the German number word into its parts using the `NumberWordTokenizer`. The `NumberWordTokenizer` creates a list of `ITokens` which can be a `Number` or an `Operator`.
 After doing this, the `NumberWordParser` calculates the numerical value of the German number word. So if the `ExpressionParser` could identify two valid numbers in the range of -9.999.999 and 9.999.999
 and is a valid operator ('+', '-', '*', '/' or german words 'plus', 'minus', 'mal', 'durch') present, the expression is finally tried to be calculated.
