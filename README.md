@@ -9,7 +9,7 @@ expressions like `4 * 5`, `675 -3` and also expressions given as German words
 e.g. `dreihundertzweiundneunzig mal sieben` and even 'mixed' expressions
 like `zweiundneunzig mal 7`.
 
-I wrote this some years ago as a respond to a test for an job application.
+I wrote this some years ago as a respond to a test for a job application.
 The orginal requirements can be found [here](REQUIREMENTS.md).
 
 
@@ -47,7 +47,7 @@ like [Eclipse](http://www.eclipse.org/) with e.g. [Run-Jetty-Run](https://code.g
 
 # How it works
 
-The program consists of a servlet responsible for the output in a HTML-Page and the input of the user data in an HTTP-Request.
+The program consists of a servlet responsible for the input of the user data in an HTTP-Request the output in a HTML-Page.
 
 There are also several classes which handle the business logic of the evaluations of the expressions.
 
@@ -60,7 +60,17 @@ The `ExpressionParser` splits the single expression into its parts, which are re
 the `ExpressionParser` tries to identify the 3 valid parts of an expression, which are: two numbers and an operator.
 
 For recognizing the numbers, the `NumberParser` is used. If no numeric number is detected, the `NumberParser` delegates the parsing of German number-words to the `NumberWordParser`.
-This one splits the German number word into its parts using the `NumberWordTokenizer`. The `NumberWordTokenizer` creates a list of `ITokens` which can be a `Number` or an `Operator`.
-After doing this, the `NumberWordParser` calculates the numerical value of the German number word. So if the `ExpressionParser` could identify two valid numbers in the range of -9.999.999 and 9.999.999
+This one splits the German number-word into its parts using the `NumberWordTokenizer`. The `NumberWordTokenizer` creates a list of `ITokens` which can be a `Number` or an `Operator`.
+After doing this, the `NumberWordParser` calculates the numerical value of the German number-word. So if the `ExpressionParser` could identify two valid numbers in the range of -9.999.999 and 9.999.999
 and is a valid operator ('+', '-', '*', '/' or german words 'plus', 'minus', 'mal', 'durch') present, the expression is finally to be calculated.
 The `ExpressionsParser` iterates over the list of expressions and tries to calculate them all. The results and the error messages are finally written to the resulting HTML-page in the servlet.
+
+#Known issues
+
+The syntax checking of the number-word parser is very relaxed, it excepts fantasy words like 'nullhundertzwanzig' and delimiter symbols in numbers at any position.
+
+Unary 'plus' is not implemented
+
+Error messages are quite basic.
+
+The web-UI is pretty ugly :)
