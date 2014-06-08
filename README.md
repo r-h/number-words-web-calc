@@ -5,7 +5,7 @@ A calculator that can process German number words in an webapp written in Java
 # About
 
 This is a web-based calculator which can evaluate simple
-expressions like `4 * 5`, `675 -3` and also expressions given as German number words
+expressions like `4 * 5`, `675 - 3` and also expressions given as German number words
 e.g. `dreihundertzweiundneunzig mal sieben` and even 'mixed' expressions
 like `zweiundneunzig mal 7`.
 
@@ -16,19 +16,19 @@ The orginal requirements can be found [here](REQUIREMENTS.md).
 # Prerequisites
 You will need :
 
-an JDK >= 7, like [Oracle JDK](http://www.oracle.com/technetwork/java/javase/downloads/index.html) or [OpenJDK](http://openjdk.java.net/install/index.html),
+a JDK >= 7, like [Oracle JDK](http://www.oracle.com/technetwork/java/javase/downloads/index.html) or [OpenJDK](http://openjdk.java.net/install/index.html),
 
-[Maven >= 3](http://maven.apache.org/download.cgi),
+[Maven >= 3](http://maven.apache.org/download.cgi), 
 
- a working internet connection, so that maven can download missing deps.
+a working internet connection, so that maven can download missing deps.
  
 An IDE is recommended, but not required
 e.g. [Eclipse](http://www.eclipse.org/) with [Maven-Plugin](https://www.eclipse.org/m2e/), [Run-Jetty-Run](https://code.google.com/p/run-jetty-run/)
 
 # Building and Running
-In the project folder do a
+After cloning this repo, in the project folder do a
 
-`    mvn install`
+`    mvn clean package`
 
 to compile and package the project.
 
@@ -47,7 +47,7 @@ like [Eclipse](http://www.eclipse.org/) with e.g. [Run-Jetty-Run](https://code.g
 
 # How it works
 
-The program consists of a servlet responsible for the input of the user data in an HTTP-Request the output in a HTML-Page.
+The program consists of a servlet responsible for the input of the user data in an HTTP-Request and the output in a HTML-Page.
 
 There are also several classes which handle the business logic of the evaluations of the expressions.
 
