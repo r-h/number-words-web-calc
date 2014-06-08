@@ -1,4 +1,4 @@
-# german-number-words-web-calc
+# number-words-web-calc
 
 A calculator that can process German number words in an webapp written in Java
 
