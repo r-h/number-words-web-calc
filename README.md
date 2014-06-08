@@ -1,6 +1,6 @@
 # number-words-web-calc
 
-A calculator that can process German number words in an webapp written in Java
+A calculator that can process German number words as a webapp written in Java
 
 # About
 
