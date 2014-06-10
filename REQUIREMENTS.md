@@ -1,21 +1,21 @@
 # 1. Goal "A calculator with German-words-recognition-function"
  The goal is a simple calculator. 
  
- For this purpose a web-UI shall be created, which can take expressions as user input.
+ For this purpose a web-UI has to be created, which can take expressions as user input.
  
  
- This expressions shall be evaluated on a web-server and the result shall be return as a web-site.
+ This expressions shall be evaluated on a web-server and the result has to be return as a web-site.
  
  
  Also remarkable about this calculator is that it recognizes German words as numbers and operators.
  
  
 # 2. Process
-The text shall be entered in a multi-line input-field. 
+The text has to be entered in a multi-line input-field. 
  
 For every line there may be an expression. 
  
-After confirmation through the user the text will be processed. The result is shown to the user in some form.
+After confirmation through the user the text will be processed. The result is shown to the user in an appropriate form.
  
 Example 
 Input:
