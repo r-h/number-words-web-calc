@@ -4,7 +4,7 @@
  For this purpose a web-UI has to be created, which can take expressions as user input.
  
  
- This expressions shall be evaluated on a web-server and the result has to be return as a web-site.
+ This expressions have to be evaluated on a web-server and the result has to be returned as a web-page.
  
  
  Also remarkable about this calculator is that it recognizes German words as numbers and operators.
@@ -31,8 +31,7 @@ Result on the web-site:
 
 `4`
 
-The program shall support the operators '+', '-', '*' and '/' in German words and literals, either shall the numbers from -9.999.999 to 9.999.999
-be supported in German words and numbers.
+The program has to support the operators '+', '-', '*' and '/' in German words and literals, also the numbers from -9.999.999 to 9.999.999 have to be supported in German words and numbers.
 
 # 3. Release
 - all needed web-sites or compiled program
