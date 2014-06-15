@@ -9,6 +9,8 @@ expressions like `4 * 5`, `675 - 3` and also expressions given as German number 
 e.g. `dreihundertzweiundneunzig mal sieben` and even 'mixed' expressions
 like `zweiundneunzig mal 7`.
 
+![number-words-web-calc](https://github.com/r-h/wicket-notes-demo/raw/master/nwwc-screenshot.png)
+
 I wrote this some years ago as a respond to a test for a job application.
 The orginal requirements can be found [here](REQUIREMENTS.md).
 

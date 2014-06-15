@@ -2,10 +2,10 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>io.github.r-h</groupId>
-	<artifactId>simple-web-calc</artifactId>
+	<artifactId>number-words-web-calc</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>simple-web-calc Webapp</name>
-	<url>https://github.com/r-h/simple-web-calc</url>
+	<name>number-words-web-calc Webapp</name>
+	<url>https://github.com/r-h/number-words-web-calc</url>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
@@ -39,7 +39,7 @@
 		</dependency>
 	</dependencies>
 	<build>
-		<finalName>simple-web-calc</finalName>
+		<finalName>number-words-web-calc</finalName>
 		<plugins>
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>

@@ -37,7 +37,7 @@ public class NumberWordsWebCalcServlet extends HttpServlet {
 			+ "	<body>\n"
 			+ "	<div class=\"container\" role=\"main\">\n"
 			+ "  <div class=\"jumbotron\">"
-			+ "	  <h1>NumberWordsCalc</h1>"
+			+ "	  <h1>NumberWordsWebCalc</h1>"
 			+ "	  <h3>Please enter a simple expression either numerical or in german words e.g. '3 + 4' or 'vierhundert mal 2'.</h3>\n"
 			+ "	  <h4>Each expression can have 2 operands (integer numbers starting from -9.999.999 to 9.999.999 in german words numerical) and an operator (+, -, *, / or in german words e.g. 'mal', 'durch').</h4>\n"
 			+ "	  <h5>Operands and operators have to be sperated by space characters.</h5>\n"
