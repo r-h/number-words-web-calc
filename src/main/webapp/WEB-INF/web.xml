@@ -4,14 +4,14 @@
         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
 http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
         id="WebApp_ID" version="3.0">
-  <display-name>SimpleWebCalc</display-name>
+  <display-name>NumberWordsWebCalc</display-name>
   <servlet>    
-    <display-name>SimpleWebCalc</display-name>
-    <servlet-name>SimpleWebCalc</servlet-name>
-    <servlet-class>io.github.r_h.simple_web_calc.servlet.SimpleWebCalcServlet</servlet-class>
+    <display-name>NumberWordsWebCalc</display-name>
+    <servlet-name>NumberWordsWebCalc</servlet-name>
+    <servlet-class>io.github.r_h.simple_web_calc.servlet.NumberWordsWebCalcServlet</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>SimpleWebCalc</servlet-name>
+    <servlet-name>NumberWordsWebCalc</servlet-name>
     <url-pattern>/</url-pattern>    
   </servlet-mapping>
 </web-app>
