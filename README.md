@@ -35,7 +35,7 @@ After cloning this repo, in the project folder do a
 to compile and package the project.
 
 The resulting WAR under the target folder should run in virtually every
-servlet container that supports servlet spec 3.0
+servlet container that supports servlet spec 2.4
 
 To run the app in place, do a 
 
