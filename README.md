@@ -67,7 +67,7 @@ After doing this, the `NumberWordParser` calculates the numerical value of the G
 and is a valid operator ('+', '-', '*', '/' or german words 'plus', 'minus', 'mal', 'durch') present, the expression is finally to be calculated.
 The `ExpressionsParser` iterates over the list of expressions and tries to calculate them all. The results and the error messages are finally written to the resulting HTML-page in the servlet.
 
-#Known issues
+# Known issues
 
 The syntax checking of the number-word parser is very relaxed, it excepts German fantasy words like 'nullhundertzwanzig' and delimiter symbols in numbers at any position.
 
