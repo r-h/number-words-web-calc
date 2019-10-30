@@ -21,7 +21,7 @@ public class NumberWordsWebCalcServlet extends HttpServlet {
 			.getLogger(NumberWordsWebCalcServlet.class);
 
 	private static final String EXPRESSION_PARAMETER_KEY = "expressions";
-	
+
 	private static final String INITIAL_DEMO_EXPRESSIONS = "5 + 6\nsechs durch drei\nvier mal einhundertvierundachtzigtausendzweihundertzweiundvierzig";
 
 	private static final String STATIC_HTML = ""
@@ -43,18 +43,20 @@ public class NumberWordsWebCalcServlet extends HttpServlet {
 			+ "	  <h5>Operands and operators have to be sperated by space characters.</h5>\n"
 			+ "	  <h6>Each line can contain one expression, you can enter multiple lines.</h6>\n"
 			+ "   <p class=\"bg-danger\">%ERRORS%</p>"
-			+ "	  <b>Result is :%RESULT%</b><br />"
 			+ "	  <form method=\"post\" accept-charset=\"UTF-8\" role=\"form\">\n"
 			+ "      <div class=\"form-group\">"
 			+ "	       <textarea name=\"expressions\" class=\"form-control\">%EXPRESSIONS%</textarea><br />\n"
-			+ "      </div>"
+            + "      </div>"
+            + "      <div class=\"form-group\">"
+            + "	       <b>Result is :%RESULT%</b><br />"
+            + "      </div>"
 			+ "      <div class=\"form-group\">"
 			+ "	       <button type=\"submit\" class=\"btn btn-primary btn-lg\" role=\"button\">Submit</button>"
 			+ "      </div>"
 			+ "   </form>\n"
 			+ "  </div>\n"
 			+ "	</div>\n"
-			+ "	</body>\n" 
+			+ "	</body>\n"
 			+ "</html>\n";
 
 	/**
@@ -82,7 +84,7 @@ public class NumberWordsWebCalcServlet extends HttpServlet {
 		resultHtml = replaceTokenWithString(resultHtml, "%RESULT%", resultString);
 
 		resultHtml = replaceTokenWithString(resultHtml, "%ERRORS%", errors);
-		
+
 		resultHtml = replaceTokenWithString(resultHtml, "%EXPRESSIONS%", expressions);
 
 		response.getWriter().append(resultHtml);
@@ -101,7 +103,7 @@ public class NumberWordsWebCalcServlet extends HttpServlet {
 	/**
 	 * Replaces the token in the text with replacement, if the replacement is
 	 * different from null. Otherwise just removes the token from text
-	 * 
+	 *
 	 * @param text a text
 	 * @param token a token
 	 * @param replacement a replacement

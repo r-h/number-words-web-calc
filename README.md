@@ -20,10 +20,10 @@ You will need :
 
 a JDK >= 7, like [Oracle JDK](http://www.oracle.com/technetwork/java/javase/downloads/index.html) or [OpenJDK](http://openjdk.java.net/install/index.html),
 
-[Maven >= 3](http://maven.apache.org/download.cgi), 
+[Maven >= 3](http://maven.apache.org/download.cgi),
 
 a working internet connection, so that maven can download missing deps.
- 
+
 An IDE is recommended, but not required
 e.g. [Eclipse](http://www.eclipse.org/) with [Maven-Plugin](https://www.eclipse.org/m2e/), [Run-Jetty-Run](https://code.google.com/p/run-jetty-run/)
 
@@ -35,9 +35,9 @@ After cloning this repo, in the project folder do a
 to compile and package the project.
 
 The resulting WAR under the target folder should run in virtually every
-servlet container that supports servlet spec 2.4
+servlet container that supports servlet spec 2.5
 
-To run the app in place, do a 
+To run the app in place, do a
 
 `    mvn jetty:run`
 
@@ -54,7 +54,7 @@ The program consists of a servlet responsible for the input of the user data in 
 There are also several classes which handle the business logic of the evaluations of the expressions.
 
 The program takes the user input which was entered in the web-page in an text-area via HTTP-Request parameter "expressions" in the servlet.
-The servlet delegates the parsing of the expression to the `ExpressionsParser`. 
+The servlet delegates the parsing of the expression to the `ExpressionsParser`.
 
 This delegates the splitting of the expressions to the `ExpressionsTokenizer`.
 This one splits the expressions on line-breaks and feeds the parts to the `ExpressionParser`, after some clean ups like removing empty strings and control characters.
