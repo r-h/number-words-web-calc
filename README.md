@@ -1,6 +1,6 @@
 # number-words-web-calc [![Build Status](https://travis-ci.org/r-h/number-words-web-calc.svg?branch=master)](https://travis-ci.org/r-h/number-words-web-calc)
 
-A calculator that can process German number words as a webapp written in Java
+A calculator that can process German number words as a webapp.
 
 # About
 
@@ -35,7 +35,7 @@ After cloning this repo, in the project folder do a
 to compile and package the project.
 
 The resulting WAR under the target folder should run in virtually every
-servlet container that supports servlet spec 2.5
+servlet container that supports servlet spec 3.1
 
 To run the app in place, do a
 
