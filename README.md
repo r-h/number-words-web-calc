@@ -1,4 +1,4 @@
-# number-words-web-calc Build Status: [!build](https://gitlab.com/r-h/number-words-web-calc/badges/gitlab/pipeline.svg)
+# number-words-web-calc Build Status: [![pipeline status](https://gitlab.com/r-h/number-words-web-calc/badges/gitlab/pipeline.svg)](https://gitlab.com/r-h/number-words-web-calc/commits/gitlab)
 
 A calculator that can process German number words as a webapp.
 
