@@ -1,6 +1,6 @@
 # number-words-web-calc Build Status: TBD.. Gitlab CI to rescue !
 
-A calculator that can process German number words as a webapp. (It syncs, or we fix it free..)
+A calculator that can process German number words as a webapp.
 
 # About
 
