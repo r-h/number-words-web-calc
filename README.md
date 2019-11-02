@@ -1,6 +1,6 @@
 # number-words-web-calc [![Build Status](https://travis-ci.org/r-h/number-words-web-calc.svg?branch=master)](https://travis-ci.org/r-h/number-words-web-calc)
 
-A calculator that can process German number words as a webapp. (It syncs, or we fix it free..)
+A calculator that can process German number words as a webapp.
 
 # About
 
