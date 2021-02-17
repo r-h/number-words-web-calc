@@ -1,4 +1,4 @@
-# number-words-web-calc [![Build Status](https://travis-ci.org/r-h/number-words-web-calc.svg?branch=master)](https://travis-ci.org/r-h/number-words-web-calc)
+# number-words-web-calc ![Java CI with Maven](https://github.com/r-h/number-words-web-calc/workflows/Java%20CI%20with%20Maven/badge.svg) Travis: [![Build Status](https://travis-ci.org/r-h/number-words-web-calc.svg?branch=master)](https://travis-ci.org/r-h/number-words-web-calc)
 
 A calculator that can process German number words as a webapp.
 
