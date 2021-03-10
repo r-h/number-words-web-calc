@@ -8,7 +8,7 @@
 	<url>https://github.com/r-h/number-words-web-calc</url>
 	<properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <jetty.version>9.4.35.v20201120</jetty.version>
+        <jetty.version>11.0.1</jetty.version>
 	</properties>
 	<dependencies>
 		<dependency>
